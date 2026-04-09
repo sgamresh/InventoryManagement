@@ -1,0 +1,121 @@
+﻿[
+    {
+        "id":  "dairy-milk",
+        "name":  "Milk",
+        "category":  "Dairy",
+        "unit":  "liter",
+        "price":  62
+    },
+    {
+        "id":  "dairy-curd",
+        "name":  "Curd",
+        "category":  "Dairy",
+        "unit":  "kg",
+        "price":  88
+    },
+    {
+        "id":  "dairy-buttermilk",
+        "name":  "Buttermilk",
+        "category":  "Dairy",
+        "unit":  "liter",
+        "price":  48
+    },
+    {
+        "id":  "dairy-lassi",
+        "name":  "Lassi",
+        "category":  "Dairy",
+        "unit":  "liter",
+        "price":  70
+    },
+    {
+        "id":  "dairy-paneer",
+        "name":  "Paneer",
+        "category":  "Dairy",
+        "unit":  "kg",
+        "price":  360
+    },
+    {
+        "id":  "dairy-butter",
+        "name":  "Butter",
+        "category":  "Dairy",
+        "unit":  "pack",
+        "price":  64
+    },
+    {
+        "id":  "dairy-ghee",
+        "name":  "Ghee",
+        "category":  "Dairy",
+        "unit":  "liter",
+        "price":  620
+    },
+    {
+        "id":  "dairy-cheese-slices",
+        "name":  "Cheese Slices",
+        "category":  "Dairy",
+        "unit":  "pack",
+        "price":  140
+    },
+    {
+        "id":  "dairy-cheddar",
+        "name":  "Cheddar Cheese",
+        "category":  "Dairy",
+        "unit":  "pack",
+        "price":  220
+    },
+    {
+        "id":  "dairy-cream",
+        "name":  "Fresh Cream",
+        "category":  "Dairy",
+        "unit":  "pack",
+        "price":  72
+    },
+    {
+        "id":  "dairy-condensed-milk",
+        "name":  "Condensed Milk",
+        "category":  "Dairy",
+        "unit":  "can",
+        "price":  138
+    },
+    {
+        "id":  "dairy-khoya",
+        "name":  "Khoya",
+        "category":  "Dairy",
+        "unit":  "kg",
+        "price":  420
+    },
+    {
+        "id":  "dairy-yogurt-greek",
+        "name":  "Greek Yogurt",
+        "category":  "Dairy",
+        "unit":  "cup",
+        "price":  52
+    },
+    {
+        "id":  "dairy-flavored-milk",
+        "name":  "Flavored Milk",
+        "category":  "Dairy",
+        "unit":  "bottle",
+        "price":  35
+    },
+    {
+        "id":  "dairy-ice-cream",
+        "name":  "Ice Cream",
+        "category":  "Dairy",
+        "unit":  "tub",
+        "price":  180
+    },
+    {
+        "id":  "dairy-tofu",
+        "name":  "Tofu",
+        "category":  "Dairy",
+        "unit":  "pack",
+        "price":  95
+    },
+    {
+        "id":  "dairy-milk-powder",
+        "name":  "Milk Powder",
+        "category":  "Dairy",
+        "unit":  "pack",
+        "price":  340
+    }
+]

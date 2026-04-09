@@ -1,5 +1,6 @@
 class InventoryApp {
   constructor() {
+    this.categoryOrder = ["Vegetables", "Fruits", "Dairy", "Grocery", "Household"];
     this.inventory = [];
     this.cart = this.loadCartFromStorage();
     this.state = {
@@ -102,12 +103,27 @@ class InventoryApp {
   async loadInventoryData() {
     const scriptUrl = document.currentScript?.src || "";
     const scriptBase = scriptUrl ? scriptUrl.substring(0, scriptUrl.lastIndexOf("/") + 1) : "";
+    const categoryIndexCandidates = [
+      new URL("inventory/index.json", window.location.href).href,
+      scriptBase ? `${scriptBase}inventory/index.json` : "inventory/index.json",
+      "inventory/index.json",
+      "./inventory/index.json"
+    ];
     const candidatePaths = [
       new URL("inventory.json", window.location.href).href,
       scriptBase ? `${scriptBase}inventory.json` : "inventory.json",
       "inventory.json",
       "./inventory.json"
     ];
+
+    try {
+      this.inventory = await this.loadInventoryFromCategoryIndex(categoryIndexCandidates);
+      this.setStatus("Inventory loaded.");
+      this.elements.fileFallback.classList.add("hidden");
+      return;
+    } catch (categoryLoadError) {
+      // Fall back to legacy single-file inventory.
+    }
 
     try {
       this.inventory = await this.tryLoadInventoryFromCandidates(candidatePaths);
@@ -127,6 +143,53 @@ class InventoryApp {
         this.elements.fileFallback.classList.remove("hidden");
       }
     }
+  }
+
+  async loadInventoryFromCategoryIndex(indexCandidates) {
+    const tried = new Set();
+
+    for (const indexPath of indexCandidates) {
+      if (!indexPath || tried.has(indexPath)) {
+        continue;
+      }
+      tried.add(indexPath);
+
+      try {
+        const indexResponse = await fetch(indexPath, { cache: "no-store" });
+        if (!indexResponse.ok) {
+          continue;
+        }
+
+        const parsedIndex = await indexResponse.json();
+        if (!parsedIndex || !Array.isArray(parsedIndex.files) || !parsedIndex.files.length) {
+          continue;
+        }
+
+        const baseHref = new URL(".", indexPath).href;
+        const merged = [];
+
+        for (const fileName of parsedIndex.files) {
+          const fileCandidates = [
+            new URL(fileName, baseHref).href,
+            `inventory/${fileName}`,
+            fileName
+          ];
+          const items = await this.tryLoadInventoryFromCandidates(fileCandidates);
+          if (!Array.isArray(items)) {
+            throw new Error(`Inventory category file is not an array: ${fileName}`);
+          }
+          merged.push(...items);
+        }
+
+        if (merged.length) {
+          return merged;
+        }
+      } catch (error) {
+        // Try next index candidate.
+      }
+    }
+
+    throw new Error("Could not load inventory category files.");
   }
 
   async tryLoadInventoryFromCandidates(candidatePaths) {
@@ -182,7 +245,7 @@ class InventoryApp {
       this.state.category = "all";
       this.elements.categoryFilter.value = "all";
     }
-    const categories = [...new Set(this.inventory.map((item) => item.category))].sort();
+    const categories = this.sortCategories([...new Set(this.inventory.map((item) => item.category))]);
     for (const category of categories) {
       const option = document.createElement("option");
       option.value = category;
@@ -209,6 +272,26 @@ class InventoryApp {
     }, {});
   }
 
+  sortCategories(categories) {
+    return [...categories].sort((a, b) => {
+      const aIndex = this.categoryOrder.indexOf(a);
+      const bIndex = this.categoryOrder.indexOf(b);
+      const aKnown = aIndex !== -1;
+      const bKnown = bIndex !== -1;
+
+      if (aKnown && bKnown) {
+        return aIndex - bIndex;
+      }
+      if (aKnown) {
+        return -1;
+      }
+      if (bKnown) {
+        return 1;
+      }
+      return a.localeCompare(b);
+    });
+  }
+
   renderInventory() {
     this.elements.inventoryContainer.innerHTML = "";
 
@@ -219,7 +302,7 @@ class InventoryApp {
     }
 
     const grouped = this.groupByCategory(filteredItems);
-    const sortedCategories = Object.keys(grouped).sort();
+    const sortedCategories = this.sortCategories(Object.keys(grouped));
 
     for (const category of sortedCategories) {
       const categoryDetails = document.createElement("details");

@@ -1,0 +1,170 @@
+﻿[
+    {
+        "id":  "fruit-banana",
+        "name":  "Banana",
+        "category":  "Fruits",
+        "unit":  "dozen",
+        "price":  62
+    },
+    {
+        "id":  "fruit-apple",
+        "name":  "Apple",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  170
+    },
+    {
+        "id":  "fruit-orange",
+        "name":  "Orange",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  110
+    },
+    {
+        "id":  "fruit-mosambi",
+        "name":  "Mosambi",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  88
+    },
+    {
+        "id":  "fruit-pomegranate",
+        "name":  "Pomegranate",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  180
+    },
+    {
+        "id":  "fruit-grapes-green",
+        "name":  "Green Grapes",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  120
+    },
+    {
+        "id":  "fruit-grapes-black",
+        "name":  "Black Grapes",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  130
+    },
+    {
+        "id":  "fruit-papaya",
+        "name":  "Papaya",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  58
+    },
+    {
+        "id":  "fruit-guava",
+        "name":  "Guava",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  84
+    },
+    {
+        "id":  "fruit-pineapple",
+        "name":  "Pineapple",
+        "category":  "Fruits",
+        "unit":  "piece",
+        "price":  78
+    },
+    {
+        "id":  "fruit-watermelon",
+        "name":  "Watermelon",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  32
+    },
+    {
+        "id":  "fruit-muskmelon",
+        "name":  "Muskmelon",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  46
+    },
+    {
+        "id":  "fruit-mango",
+        "name":  "Mango",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  140
+    },
+    {
+        "id":  "fruit-pear",
+        "name":  "Pear",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  170
+    },
+    {
+        "id":  "fruit-plum",
+        "name":  "Plum",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  190
+    },
+    {
+        "id":  "fruit-kiwi",
+        "name":  "Kiwi",
+        "category":  "Fruits",
+        "unit":  "pack",
+        "price":  135
+    },
+    {
+        "id":  "fruit-chikoo",
+        "name":  "Chikoo (Sapota)",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  92
+    },
+    {
+        "id":  "fruit-jamun",
+        "name":  "Jamun",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  150
+    },
+    {
+        "id":  "fruit-litchi",
+        "name":  "Litchi",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  180
+    },
+    {
+        "id":  "fruit-custard-apple",
+        "name":  "Custard Apple",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  130
+    },
+    {
+        "id":  "fruit-coconut",
+        "name":  "Coconut",
+        "category":  "Fruits",
+        "unit":  "piece",
+        "price":  42
+    },
+    {
+        "id":  "fruit-dates-fresh",
+        "name":  "Fresh Dates",
+        "category":  "Fruits",
+        "unit":  "kg",
+        "price":  210
+    },
+    {
+        "id":  "fruit-strawberry",
+        "name":  "Strawberry",
+        "category":  "Fruits",
+        "unit":  "pack",
+        "price":  160
+    },
+    {
+        "id":  "fruit-dragon-fruit",
+        "name":  "Dragon Fruit",
+        "category":  "Fruits",
+        "unit":  "piece",
+        "price":  85
+    }
+]

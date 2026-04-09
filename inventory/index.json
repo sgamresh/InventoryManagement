@@ -1,0 +1,9 @@
+﻿{
+    "files":  [
+                  "vegetables.json",
+                  "fruits.json",
+                  "dairy.json",
+                  "grocery.json",
+                  "household.json"
+              ]
+}

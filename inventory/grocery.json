@@ -1,0 +1,317 @@
+﻿[
+    {
+        "id":  "grocery-rice-sona",
+        "name":  "Sona Masoori Rice",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  72
+    },
+    {
+        "id":  "grocery-rice-basmati",
+        "name":  "Basmati Rice",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  118
+    },
+    {
+        "id":  "grocery-rice-brown",
+        "name":  "Brown Rice",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  105
+    },
+    {
+        "id":  "grocery-wheat-flour",
+        "name":  "Wheat Flour (Atta)",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  52
+    },
+    {
+        "id":  "grocery-maida",
+        "name":  "Refined Flour (Maida)",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  46
+    },
+    {
+        "id":  "grocery-sooji",
+        "name":  "Sooji (Rava)",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  50
+    },
+    {
+        "id":  "grocery-poha",
+        "name":  "Poha",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  58
+    },
+    {
+        "id":  "grocery-vermicelli",
+        "name":  "Vermicelli",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  38
+    },
+    {
+        "id":  "grocery-oats",
+        "name":  "Oats",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  148
+    },
+    {
+        "id":  "grocery-corn-flour",
+        "name":  "Corn Flour",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  42
+    },
+    {
+        "id":  "grocery-besan",
+        "name":  "Besan",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  86
+    },
+    {
+        "id":  "grocery-ragi-flour",
+        "name":  "Ragi Flour",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  70
+    },
+    {
+        "id":  "grocery-jowar-flour",
+        "name":  "Jowar Flour",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  72
+    },
+    {
+        "id":  "grocery-bajra-flour",
+        "name":  "Bajra Flour",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  68
+    },
+    {
+        "id":  "grocery-toor-dal",
+        "name":  "Toor Dal",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  138
+    },
+    {
+        "id":  "grocery-moong-dal",
+        "name":  "Moong Dal",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  128
+    },
+    {
+        "id":  "grocery-masoor-dal",
+        "name":  "Masoor Dal",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  118
+    },
+    {
+        "id":  "grocery-chana-dal",
+        "name":  "Chana Dal",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  98
+    },
+    {
+        "id":  "grocery-urad-dal",
+        "name":  "Urad Dal",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  145
+    },
+    {
+        "id":  "grocery-kabuli-chana",
+        "name":  "Kabuli Chana",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  122
+    },
+    {
+        "id":  "grocery-kala-chana",
+        "name":  "Kala Chana",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  102
+    },
+    {
+        "id":  "grocery-rajma",
+        "name":  "Rajma",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  132
+    },
+    {
+        "id":  "grocery-lobia",
+        "name":  "Lobia",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  108
+    },
+    {
+        "id":  "grocery-green-moong",
+        "name":  "Whole Green Moong",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  112
+    },
+    {
+        "id":  "grocery-peanuts",
+        "name":  "Peanuts",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  120
+    },
+    {
+        "id":  "grocery-sugar",
+        "name":  "Sugar",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  46
+    },
+    {
+        "id":  "grocery-jaggery",
+        "name":  "Jaggery",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  68
+    },
+    {
+        "id":  "grocery-rock-salt",
+        "name":  "Rock Salt",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  54
+    },
+    {
+        "id":  "grocery-iodized-salt",
+        "name":  "Iodized Salt",
+        "category":  "Grocery",
+        "unit":  "kg",
+        "price":  24
+    },
+    {
+        "id":  "grocery-turmeric",
+        "name":  "Turmeric Powder",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  38
+    },
+    {
+        "id":  "grocery-red-chilli",
+        "name":  "Red Chilli Powder",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  42
+    },
+    {
+        "id":  "grocery-coriander-powder",
+        "name":  "Coriander Powder",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  40
+    },
+    {
+        "id":  "grocery-garam-masala",
+        "name":  "Garam Masala",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  58
+    },
+    {
+        "id":  "grocery-cumin",
+        "name":  "Cumin Seeds",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  72
+    },
+    {
+        "id":  "grocery-mustard",
+        "name":  "Mustard Seeds",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  46
+    },
+    {
+        "id":  "grocery-fenugreek-seeds",
+        "name":  "Fenugreek Seeds",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  34
+    },
+    {
+        "id":  "grocery-black-pepper",
+        "name":  "Black Pepper",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  98
+    },
+    {
+        "id":  "grocery-cardamom",
+        "name":  "Cardamom",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  125
+    },
+    {
+        "id":  "grocery-cloves",
+        "name":  "Cloves",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  88
+    },
+    {
+        "id":  "grocery-cinnamon",
+        "name":  "Cinnamon",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  82
+    },
+    {
+        "id":  "grocery-cooking-oil",
+        "name":  "Sunflower Oil",
+        "category":  "Grocery",
+        "unit":  "liter",
+        "price":  152
+    },
+    {
+        "id":  "grocery-mustard-oil",
+        "name":  "Mustard Oil",
+        "category":  "Grocery",
+        "unit":  "liter",
+        "price":  172
+    },
+    {
+        "id":  "grocery-groundnut-oil",
+        "name":  "Groundnut Oil",
+        "category":  "Grocery",
+        "unit":  "liter",
+        "price":  186
+    },
+    {
+        "id":  "grocery-tea",
+        "name":  "Tea",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  180
+    },
+    {
+        "id":  "grocery-coffee",
+        "name":  "Coffee",
+        "category":  "Grocery",
+        "unit":  "pack",
+        "price":  220
+    }
+]

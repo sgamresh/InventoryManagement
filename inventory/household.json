@@ -1,0 +1,177 @@
+﻿[
+    {
+        "id":  "household-detergent-powder",
+        "name":  "Detergent Powder",
+        "category":  "Household",
+        "unit":  "kg",
+        "price":  110
+    },
+    {
+        "id":  "household-liquid-detergent",
+        "name":  "Liquid Detergent",
+        "category":  "Household",
+        "unit":  "liter",
+        "price":  185
+    },
+    {
+        "id":  "household-fabric-conditioner",
+        "name":  "Fabric Conditioner",
+        "category":  "Household",
+        "unit":  "liter",
+        "price":  210
+    },
+    {
+        "id":  "household-dishwash-liquid",
+        "name":  "Dishwash Liquid",
+        "category":  "Household",
+        "unit":  "liter",
+        "price":  130
+    },
+    {
+        "id":  "household-dishwash-bar",
+        "name":  "Dishwash Bar",
+        "category":  "Household",
+        "unit":  "piece",
+        "price":  20
+    },
+    {
+        "id":  "household-scrubber",
+        "name":  "Scrubber",
+        "category":  "Household",
+        "unit":  "pack",
+        "price":  34
+    },
+    {
+        "id":  "household-floor-cleaner",
+        "name":  "Floor Cleaner",
+        "category":  "Household",
+        "unit":  "liter",
+        "price":  168
+    },
+    {
+        "id":  "household-toilet-cleaner",
+        "name":  "Toilet Cleaner",
+        "category":  "Household",
+        "unit":  "liter",
+        "price":  142
+    },
+    {
+        "id":  "household-glass-cleaner",
+        "name":  "Glass Cleaner",
+        "category":  "Household",
+        "unit":  "bottle",
+        "price":  138
+    },
+    {
+        "id":  "household-disinfectant",
+        "name":  "Disinfectant Liquid",
+        "category":  "Household",
+        "unit":  "liter",
+        "price":  205
+    },
+    {
+        "id":  "household-phenyl",
+        "name":  "Phenyl",
+        "category":  "Household",
+        "unit":  "liter",
+        "price":  95
+    },
+    {
+        "id":  "household-bleach",
+        "name":  "Bleach",
+        "category":  "Household",
+        "unit":  "bottle",
+        "price":  72
+    },
+    {
+        "id":  "household-room-freshener",
+        "name":  "Room Freshener",
+        "category":  "Household",
+        "unit":  "can",
+        "price":  188
+    },
+    {
+        "id":  "household-agarbatti",
+        "name":  "Agarbatti",
+        "category":  "Household",
+        "unit":  "pack",
+        "price":  42
+    },
+    {
+        "id":  "household-mosquito-repellent",
+        "name":  "Mosquito Repellent",
+        "category":  "Household",
+        "unit":  "pack",
+        "price":  98
+    },
+    {
+        "id":  "household-tissue-roll",
+        "name":  "Tissue Roll",
+        "category":  "Household",
+        "unit":  "piece",
+        "price":  36
+    },
+    {
+        "id":  "household-toilet-paper",
+        "name":  "Toilet Paper",
+        "category":  "Household",
+        "unit":  "pack",
+        "price":  110
+    },
+    {
+        "id":  "household-paper-napkin",
+        "name":  "Paper Napkin",
+        "category":  "Household",
+        "unit":  "pack",
+        "price":  48
+    },
+    {
+        "id":  "household-aluminium-foil",
+        "name":  "Aluminium Foil",
+        "category":  "Household",
+        "unit":  "roll",
+        "price":  95
+    },
+    {
+        "id":  "household-cling-film",
+        "name":  "Cling Film",
+        "category":  "Household",
+        "unit":  "roll",
+        "price":  88
+    },
+    {
+        "id":  "household-garbage-bags",
+        "name":  "Garbage Bags",
+        "category":  "Household",
+        "unit":  "roll",
+        "price":  72
+    },
+    {
+        "id":  "household-matchbox",
+        "name":  "Matchbox",
+        "category":  "Household",
+        "unit":  "pack",
+        "price":  16
+    },
+    {
+        "id":  "household-candles",
+        "name":  "Candles",
+        "category":  "Household",
+        "unit":  "pack",
+        "price":  38
+    },
+    {
+        "id":  "household-batteries-aa",
+        "name":  "AA Batteries",
+        "category":  "Household",
+        "unit":  "pack",
+        "price":  98
+    },
+    {
+        "id":  "household-batteries-aaa",
+        "name":  "AAA Batteries",
+        "category":  "Household",
+        "unit":  "pack",
+        "price":  98
+    }
+]
