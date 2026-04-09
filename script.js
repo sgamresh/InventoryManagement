@@ -84,9 +84,14 @@ class InventoryApp {
         if (!Array.isArray(parsed)) {
           throw new Error("Inventory file must contain a JSON array.");
         }
-        this.inventory = parsed;
+        const { items, rejectedCount } = this.sanitizeInventoryItems(parsed);
+        this.inventory = items;
         this.elements.fileFallback.classList.add("hidden");
-        this.setStatus("Inventory loaded from selected file.");
+        this.setStatus(
+          rejectedCount
+            ? `Inventory loaded from selected file. Skipped ${rejectedCount} invalid item(s).`
+            : "Inventory loaded from selected file."
+        );
         this.populateCategoryFilter(true);
         this.renderInventory();
         this.renderCart();
@@ -117,8 +122,10 @@ class InventoryApp {
     ];
 
     try {
-      this.inventory = await this.loadInventoryFromCategoryIndex(categoryIndexCandidates);
-      this.setStatus("Inventory loaded.");
+      const mergedItems = await this.loadInventoryFromCategoryIndex(categoryIndexCandidates);
+      const { items, rejectedCount } = this.sanitizeInventoryItems(mergedItems);
+      this.inventory = items;
+      this.setStatus(rejectedCount ? `Inventory loaded. Skipped ${rejectedCount} invalid item(s).` : "Inventory loaded.");
       this.elements.fileFallback.classList.add("hidden");
       return;
     } catch (categoryLoadError) {
@@ -126,15 +133,19 @@ class InventoryApp {
     }
 
     try {
-      this.inventory = await this.tryLoadInventoryFromCandidates(candidatePaths);
-      this.setStatus("Inventory loaded.");
+      const fetchedItems = await this.tryLoadInventoryFromCandidates(candidatePaths);
+      const { items, rejectedCount } = this.sanitizeInventoryItems(fetchedItems);
+      this.inventory = items;
+      this.setStatus(rejectedCount ? `Inventory loaded. Skipped ${rejectedCount} invalid item(s).` : "Inventory loaded.");
       this.elements.fileFallback.classList.add("hidden");
       return;
     } catch (fetchError) {
       // Some browsers restrict fetch()/XHR from file:// URLs.
       try {
-        this.inventory = await this.loadInventoryWithXHR("inventory.json");
-        this.setStatus("Inventory loaded.");
+        const xhrItems = await this.loadInventoryWithXHR("inventory.json");
+        const { items, rejectedCount } = this.sanitizeInventoryItems(xhrItems);
+        this.inventory = items;
+        this.setStatus(rejectedCount ? `Inventory loaded. Skipped ${rejectedCount} invalid item(s).` : "Inventory loaded.");
         this.elements.fileFallback.classList.add("hidden");
       } catch (xhrError) {
         console.error("Inventory load error:", fetchError, xhrError);
@@ -239,6 +250,63 @@ class InventoryApp {
     });
   }
 
+  sanitizeInventoryItems(items) {
+    const incrementKeys = ["increment", "quantityIncrement", "qtyIncrement", "step"];
+    const defaultQuantityKeys = ["defaultQuantity", "defaultQty", "initialQuantity", "qty", "quantity"];
+    const validItems = [];
+    const rejectedItems = [];
+
+    for (const item of items) {
+      if (!item || typeof item !== "object") {
+        rejectedItems.push({ id: "(unknown)", key: "item", value: item });
+        continue;
+      }
+
+      let invalidField = null;
+
+      for (const key of incrementKeys) {
+        if (!Object.prototype.hasOwnProperty.call(item, key)) {
+          continue;
+        }
+        const numeric = Number(item[key]);
+        if (!Number.isInteger(numeric) || numeric <= 0) {
+          invalidField = key;
+          break;
+        }
+      }
+
+      if (!invalidField) {
+        for (const key of defaultQuantityKeys) {
+          if (!Object.prototype.hasOwnProperty.call(item, key)) {
+            continue;
+          }
+          const numeric = Number(item[key]);
+          if (!Number.isInteger(numeric) || numeric < 0) {
+            invalidField = key;
+            break;
+          }
+        }
+      }
+
+      if (invalidField) {
+        rejectedItems.push({
+          id: item.id || "(unknown)",
+          key: invalidField,
+          value: item[invalidField]
+        });
+        continue;
+      }
+
+      validItems.push(item);
+    }
+
+    if (rejectedItems.length) {
+      console.warn("Rejected inventory items due to non-integer increment/default quantity fields:", rejectedItems);
+    }
+
+    return { items: validItems, rejectedCount: rejectedItems.length };
+  }
+
   populateCategoryFilter(reset = false) {
     if (reset) {
       this.elements.categoryFilter.innerHTML = `<option value="all">All Categories</option>`;
@@ -290,6 +358,14 @@ class InventoryApp {
       }
       return a.localeCompare(b);
     });
+  }
+
+  normalizeQuantity(value) {
+    const numeric = Number(value);
+    if (!Number.isFinite(numeric)) {
+      return 0;
+    }
+    return Math.max(0, Math.round(numeric));
   }
 
   renderInventory() {
@@ -347,33 +423,33 @@ class InventoryApp {
     qtyInput.value = currentQty;
 
     const updateQty = (nextQty) => {
-      const safeQty = Number.isFinite(nextQty) ? Math.max(0, Number(nextQty.toFixed(2))) : 0;
+      const safeQty = this.normalizeQuantity(nextQty);
       qtyInput.value = safeQty;
       this.updateCart(item, safeQty);
       card.classList.add("added");
       setTimeout(() => card.classList.remove("added"), 350);
     };
 
-    minusBtn.addEventListener("click", () => updateQty((Number(qtyInput.value) || 0) - 0.25));
-    plusBtn.addEventListener("click", () => updateQty((Number(qtyInput.value) || 0) + 0.25));
+    minusBtn.addEventListener("click", () => updateQty((Number(qtyInput.value) || 0) - 1));
+    plusBtn.addEventListener("click", () => updateQty((Number(qtyInput.value) || 0) + 1));
 
     qtyInput.addEventListener("input", () => {
-      const entered = parseFloat(qtyInput.value);
-      updateQty(Number.isNaN(entered) ? 0 : entered);
+      updateQty(qtyInput.value);
     });
 
     return node;
   }
 
   updateCart(item, quantity) {
-    if (quantity <= 0) {
+    const safeQuantity = this.normalizeQuantity(quantity);
+    if (safeQuantity <= 0) {
       delete this.cart[item.id];
     } else {
       this.cart[item.id] = {
         id: item.id,
         name: item.name,
         unit: item.unit,
-        quantity,
+        quantity: safeQuantity,
         price: typeof item.price === "number" ? item.price : null
       };
     }
@@ -409,7 +485,7 @@ class InventoryApp {
       ? cartValues.reduce((sum, item) => sum + item.price * item.quantity, 0)
       : null;
 
-    this.elements.totalItems.textContent = totalItems.toFixed(2).replace(/\.00$/, "");
+    this.elements.totalItems.textContent = String(totalItems);
     this.elements.totalPrice.textContent = totalPrice !== null ? `₹${totalPrice.toFixed(2)}` : "Not available";
   }
 
@@ -447,7 +523,33 @@ class InventoryApp {
   loadCartFromStorage() {
     try {
       const saved = localStorage.getItem("inventory-cart");
-      return saved ? JSON.parse(saved) : {};
+      if (!saved) {
+        return {};
+      }
+
+      const parsed = JSON.parse(saved);
+      if (!parsed || typeof parsed !== "object") {
+        return {};
+      }
+
+      const sanitized = {};
+      Object.entries(parsed).forEach(([itemId, entry]) => {
+        if (!entry || typeof entry !== "object") {
+          return;
+        }
+
+        const safeQuantity = this.normalizeQuantity(entry.quantity);
+        if (safeQuantity <= 0) {
+          return;
+        }
+
+        sanitized[itemId] = {
+          ...entry,
+          quantity: safeQuantity
+        };
+      });
+
+      return sanitized;
     } catch (error) {
       console.warn("Could not parse cart in localStorage:", error);
       return {};
