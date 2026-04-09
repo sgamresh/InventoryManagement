@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory Order Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Local Inventory Tool</p>
+      <h1>Inventory & WhatsApp Order</h1>
+      <p class="subtitle">Select items, adjust quantity, and send the order in one click.</p>
+    </div>
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <span class="theme-icon" aria-hidden="true">🌗</span>
+      <span>Theme</span>
+    </button>
+  </header>
+
+  <main class="layout">
+    <section class="inventory-panel card">
+      <div class="controls">
+        <label class="search-wrap">
+          <span class="sr-only">Search items</span>
+          <input id="searchInput" type="search" placeholder="Search item name..." />
+        </label>
+        <label class="filter-wrap">
+          <span class="sr-only">Filter category</span>
+          <select id="categoryFilter">
+            <option value="all">All Categories</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="fileFallback" class="file-fallback hidden">
+        <p>Could not auto-load <code>inventory.json</code>. Select it manually to continue.</p>
+        <button id="loadFileBtn" type="button" class="ghost-btn">Load inventory.json</button>
+        <input id="inventoryFileInput" type="file" accept="application/json,.json" class="sr-only" />
+      </div>
+
+      <div id="statusMessage" class="status-message" role="status" aria-live="polite"></div>
+      <div id="inventoryContainer" class="inventory-container"></div>
+    </section>
+
+    <aside class="cart-panel card">
+      <div class="cart-header">
+        <h2>Order Summary</h2>
+        <button id="clearCartBtn" type="button" class="ghost-btn">Clear Cart</button>
+      </div>
+
+      <ul id="cartList" class="cart-list"></ul>
+
+      <div class="cart-total-row">
+        <span>Total Items:</span>
+        <strong id="totalItems">0</strong>
+      </div>
+      <div class="cart-total-row">
+        <span>Estimated Total:</span>
+        <strong id="totalPrice">Not available</strong>
+      </div>
+
+      <label class="phone-wrap">
+        <span>WhatsApp Number (optional)</span>
+        <input id="phoneInput" type="tel" placeholder="e.g. 919876543210" />
+      </label>
+
+      <div class="cart-actions">
+        <button id="editOrderBtn" type="button" class="ghost-btn">Edit Order</button>
+        <button id="sendWhatsAppBtn" type="button" class="primary-btn">Send via WhatsApp</button>
+      </div>
+    </aside>
+  </main>
+
+  <template id="itemTemplate">
+    <article class="item-card">
+      <div class="item-info">
+        <h3 class="item-name"></h3>
+        <p class="item-meta"></p>
+      </div>
+      <div class="qty-control">
+        <button class="qty-btn minus" type="button" aria-label="Decrease quantity">-</button>
+        <input class="qty-input" type="number" min="0" step="0.25" value="0" />
+        <button class="qty-btn plus" type="button" aria-label="Increase quantity">+</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
