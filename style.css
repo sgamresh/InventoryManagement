@@ -175,6 +175,55 @@ body.dark .phone-wrap input {
   font-size: 0.9rem;
 }
 
+.admin-panel {
+  border: 1px dashed var(--surface-border);
+  border-radius: 12px;
+  padding: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.admin-panel h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.admin-note {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.add-item-form {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.add-item-form label {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.add-item-form span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.add-item-form input,
+.add-item-form select {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--surface-border);
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--text);
+  padding: 0.6rem 0.72rem;
+  font: inherit;
+}
+
+body.dark .add-item-form input,
+body.dark .add-item-form select {
+  background: rgba(15, 27, 20, 0.7);
+}
+
 .hidden {
   display: none !important;
 }
@@ -249,6 +298,50 @@ body.dark .item-card {
   margin: 0.2rem 0 0;
   color: var(--muted);
   font-size: 0.88rem;
+}
+
+.admin-edit-item {
+  margin-top: 0.55rem;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.82rem;
+}
+
+.admin-edit-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 15, 12, 0.58);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.modal-card {
+  width: min(520px, 100%);
+  border: 1px solid var(--surface-border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 0.9rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
 }
 
 .qty-control {
@@ -343,7 +436,8 @@ h2 {
 }
 
 .primary-btn,
-.ghost-btn {
+.ghost-btn,
+.danger-btn {
   border-radius: 10px;
   border: 1px solid transparent;
   padding: 0.65rem 0.75rem;
@@ -361,6 +455,12 @@ h2 {
   border-color: var(--surface-border);
   background: transparent;
   color: var(--text);
+}
+
+.danger-btn {
+  border-color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 12%, transparent);
+  color: var(--danger);
 }
 
 .empty-state {

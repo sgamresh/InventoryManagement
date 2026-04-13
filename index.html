@@ -55,6 +55,29 @@
           </select>
         </label>
       </div>
+      <section id="adminPanel" class="admin-panel hidden">
+        <h2>Localhost Inventory Admin</h2>
+        <p class="admin-note">Price editing and item creation are enabled only on localhost.</p>
+        <form id="addItemForm" class="add-item-form">
+          <label>
+            <span>Item Name</span>
+            <input id="addItemName" type="text" required />
+          </label>
+          <label>
+            <span>Category</span>
+            <select id="addItemCategory" required></select>
+          </label>
+          <label>
+            <span>Unit</span>
+            <input id="addItemUnit" type="text" placeholder="kg, liter, pack..." required />
+          </label>
+          <label>
+            <span>Price (INR)</span>
+            <input id="addItemPrice" type="number" min="0" step="0.01" required />
+          </label>
+          <button id="addItemBtn" type="submit" class="primary-btn">Add Item</button>
+        </form>
+      </section>
 
       <div id="fileFallback" class="file-fallback hidden">
         <p>Could not auto-load inventory files. Select a JSON file manually to continue.</p>
@@ -100,6 +123,7 @@
       <div class="item-info">
         <h3 class="item-name"></h3>
         <p class="item-meta"></p>
+        <button class="ghost-btn admin-edit-item hidden" type="button">Edit Item</button>
       </div>
       <div class="qty-control">
         <button class="qty-btn minus" type="button" aria-label="Decrease quantity">-</button>
@@ -108,6 +132,38 @@
       </div>
     </article>
   </template>
+
+  <div id="editItemModal" class="modal-backdrop hidden" aria-hidden="true">
+    <section class="modal-card">
+      <div class="modal-header">
+        <h2>Edit Item</h2>
+        <button id="editModalCloseBtn" type="button" class="ghost-btn">Close</button>
+      </div>
+      <form id="editItemForm" class="add-item-form">
+        <label>
+          <span>Name</span>
+          <input id="editItemName" type="text" required />
+        </label>
+        <label>
+          <span>Unit</span>
+          <input id="editItemUnit" type="text" required />
+        </label>
+        <label>
+          <span>Price (INR)</span>
+          <input id="editItemPrice" type="number" min="0" step="0.01" required />
+        </label>
+        <label>
+          <span>Category</span>
+          <select id="editItemCategory" required></select>
+        </label>
+        <div class="admin-edit-actions">
+          <button id="editModalDeleteBtn" type="button" class="danger-btn">Delete Item</button>
+          <button type="submit" class="primary-btn">Save</button>
+          <button id="editModalCancelBtn" type="button" class="ghost-btn">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </div>
 
   <script src="script.js"></script>
 </body>

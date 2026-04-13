@@ -1,152 +1,989 @@
-﻿[
-  { "id": "veg-potato", "name": "Potato", "category": "Vegetables", "unit": "kg", "price": 32 },
-  { "id": "veg-onion", "name": "Onion", "category": "Vegetables", "unit": "kg", "price": 38 },
-  { "id": "veg-tomato", "name": "Tomato", "category": "Vegetables", "unit": "kg", "price": 34 },
-  { "id": "veg-lady-finger", "name": "Lady Finger (Bhindi)", "category": "Vegetables", "unit": "kg", "price": 56 },
-  { "id": "veg-brinjal", "name": "Brinjal", "category": "Vegetables", "unit": "kg", "price": 44 },
-  { "id": "veg-cauliflower", "name": "Cauliflower", "category": "Vegetables", "unit": "piece", "price": 42 },
-  { "id": "veg-cabbage", "name": "Cabbage", "category": "Vegetables", "unit": "piece", "price": 36 },
-  { "id": "veg-capsicum", "name": "Capsicum", "category": "Vegetables", "unit": "kg", "price": 72 },
-  { "id": "veg-carrot", "name": "Carrot", "category": "Vegetables", "unit": "kg", "price": 52 },
-  { "id": "veg-beetroot", "name": "Beetroot", "category": "Vegetables", "unit": "kg", "price": 48 },
-  { "id": "veg-bottle-gourd", "name": "Bottle Gourd (Lauki)", "category": "Vegetables", "unit": "piece", "price": 38 },
-  { "id": "veg-ridge-gourd", "name": "Ridge Gourd (Turai)", "category": "Vegetables", "unit": "kg", "price": 54 },
-  { "id": "veg-bitter-gourd", "name": "Bitter Gourd (Karela)", "category": "Vegetables", "unit": "kg", "price": 68 },
-  { "id": "veg-snake-gourd", "name": "Snake Gourd", "category": "Vegetables", "unit": "kg", "price": 60 },
-  { "id": "veg-pumpkin", "name": "Pumpkin", "category": "Vegetables", "unit": "kg", "price": 34 },
-  { "id": "veg-raw-banana", "name": "Raw Banana", "category": "Vegetables", "unit": "kg", "price": 46 },
-  { "id": "veg-cucumber", "name": "Cucumber", "category": "Vegetables", "unit": "kg", "price": 36 },
-  { "id": "veg-radish", "name": "Radish", "category": "Vegetables", "unit": "kg", "price": 32 },
-  { "id": "veg-turnip", "name": "Turnip", "category": "Vegetables", "unit": "kg", "price": 52 },
-  { "id": "veg-drumstick", "name": "Drumstick", "category": "Vegetables", "unit": "kg", "price": 88 },
-  { "id": "veg-green-peas", "name": "Green Peas", "category": "Vegetables", "unit": "kg", "price": 96 },
-  { "id": "veg-french-beans", "name": "French Beans", "category": "Vegetables", "unit": "kg", "price": 86 },
-  { "id": "veg-cluster-beans", "name": "Cluster Beans", "category": "Vegetables", "unit": "kg", "price": 74 },
-  { "id": "veg-ivy-gourd", "name": "Ivy Gourd (Tindora)", "category": "Vegetables", "unit": "kg", "price": 64 },
-  { "id": "veg-pointed-gourd", "name": "Pointed Gourd (Parwal)", "category": "Vegetables", "unit": "kg", "price": 78 },
-  { "id": "veg-ginger", "name": "Ginger", "category": "Vegetables", "unit": "kg", "price": 118 },
-  { "id": "veg-garlic", "name": "Garlic", "category": "Vegetables", "unit": "kg", "price": 168 },
-  { "id": "veg-green-chilli", "name": "Green Chilli", "category": "Vegetables", "unit": "kg", "price": 92 },
-  { "id": "veg-coriander", "name": "Coriander Leaves", "category": "Vegetables", "unit": "bunch", "price": 18 },
-  { "id": "veg-mint", "name": "Mint Leaves", "category": "Vegetables", "unit": "bunch", "price": 16 },
-  { "id": "veg-spinach", "name": "Spinach (Palak)", "category": "Vegetables", "unit": "bunch", "price": 20 },
-  { "id": "veg-fenugreek", "name": "Fenugreek Leaves (Methi)", "category": "Vegetables", "unit": "bunch", "price": 22 },
-  { "id": "veg-amaranth", "name": "Amaranth Leaves", "category": "Vegetables", "unit": "bunch", "price": 20 },
-  { "id": "veg-curry-leaves", "name": "Curry Leaves", "category": "Vegetables", "unit": "pack", "price": 12 },
-  { "id": "veg-lemon", "name": "Lemon", "category": "Vegetables", "unit": "dozen", "price": 58 },
-
-  { "id": "fruit-banana", "name": "Banana", "category": "Fruits", "unit": "dozen", "price": 62 },
-  { "id": "fruit-apple", "name": "Apple", "category": "Fruits", "unit": "kg", "price": 170 },
-  { "id": "fruit-orange", "name": "Orange", "category": "Fruits", "unit": "kg", "price": 110 },
-  { "id": "fruit-mosambi", "name": "Mosambi", "category": "Fruits", "unit": "kg", "price": 88 },
-  { "id": "fruit-pomegranate", "name": "Pomegranate", "category": "Fruits", "unit": "kg", "price": 180 },
-  { "id": "fruit-grapes-green", "name": "Green Grapes", "category": "Fruits", "unit": "kg", "price": 120 },
-  { "id": "fruit-grapes-black", "name": "Black Grapes", "category": "Fruits", "unit": "kg", "price": 130 },
-  { "id": "fruit-papaya", "name": "Papaya", "category": "Fruits", "unit": "kg", "price": 58 },
-  { "id": "fruit-guava", "name": "Guava", "category": "Fruits", "unit": "kg", "price": 84 },
-  { "id": "fruit-pineapple", "name": "Pineapple", "category": "Fruits", "unit": "piece", "price": 78 },
-  { "id": "fruit-watermelon", "name": "Watermelon", "category": "Fruits", "unit": "kg", "price": 32 },
-  { "id": "fruit-muskmelon", "name": "Muskmelon", "category": "Fruits", "unit": "kg", "price": 46 },
-  { "id": "fruit-mango", "name": "Mango", "category": "Fruits", "unit": "kg", "price": 140 },
-  { "id": "fruit-pear", "name": "Pear", "category": "Fruits", "unit": "kg", "price": 170 },
-  { "id": "fruit-plum", "name": "Plum", "category": "Fruits", "unit": "kg", "price": 190 },
-  { "id": "fruit-kiwi", "name": "Kiwi", "category": "Fruits", "unit": "pack", "price": 135 },
-  { "id": "fruit-chikoo", "name": "Chikoo (Sapota)", "category": "Fruits", "unit": "kg", "price": 92 },
-  { "id": "fruit-jamun", "name": "Jamun", "category": "Fruits", "unit": "kg", "price": 150 },
-  { "id": "fruit-litchi", "name": "Litchi", "category": "Fruits", "unit": "kg", "price": 180 },
-  { "id": "fruit-custard-apple", "name": "Custard Apple", "category": "Fruits", "unit": "kg", "price": 130 },
-  { "id": "fruit-coconut", "name": "Coconut", "category": "Fruits", "unit": "piece", "price": 42 },
-  { "id": "fruit-dates-fresh", "name": "Fresh Dates", "category": "Fruits", "unit": "kg", "price": 210 },
-  { "id": "fruit-strawberry", "name": "Strawberry", "category": "Fruits", "unit": "pack", "price": 160 },
-  { "id": "fruit-dragon-fruit", "name": "Dragon Fruit", "category": "Fruits", "unit": "piece", "price": 85 },
-
-  { "id": "dairy-milk", "name": "Milk", "category": "Dairy", "unit": "liter", "price": 62 },
-  { "id": "dairy-curd", "name": "Curd", "category": "Dairy", "unit": "kg", "price": 88 },
-  { "id": "dairy-buttermilk", "name": "Buttermilk", "category": "Dairy", "unit": "liter", "price": 48 },
-  { "id": "dairy-lassi", "name": "Lassi", "category": "Dairy", "unit": "liter", "price": 70 },
-  { "id": "dairy-paneer", "name": "Paneer", "category": "Dairy", "unit": "kg", "price": 360 },
-  { "id": "dairy-butter", "name": "Butter", "category": "Dairy", "unit": "pack", "price": 64 },
-  { "id": "dairy-ghee", "name": "Ghee", "category": "Dairy", "unit": "liter", "price": 620 },
-  { "id": "dairy-cheese-slices", "name": "Cheese Slices", "category": "Dairy", "unit": "pack", "price": 140 },
-  { "id": "dairy-cheddar", "name": "Cheddar Cheese", "category": "Dairy", "unit": "pack", "price": 220 },
-  { "id": "dairy-cream", "name": "Fresh Cream", "category": "Dairy", "unit": "pack", "price": 72 },
-  { "id": "dairy-condensed-milk", "name": "Condensed Milk", "category": "Dairy", "unit": "can", "price": 138 },
-  { "id": "dairy-khoya", "name": "Khoya", "category": "Dairy", "unit": "kg", "price": 420 },
-  { "id": "dairy-yogurt-greek", "name": "Greek Yogurt", "category": "Dairy", "unit": "cup", "price": 52 },
-  { "id": "dairy-flavored-milk", "name": "Flavored Milk", "category": "Dairy", "unit": "bottle", "price": 35 },
-  { "id": "dairy-ice-cream", "name": "Ice Cream", "category": "Dairy", "unit": "tub", "price": 180 },
-  { "id": "dairy-tofu", "name": "Tofu", "category": "Dairy", "unit": "pack", "price": 95 },
-  { "id": "dairy-milk-powder", "name": "Milk Powder", "category": "Dairy", "unit": "pack", "price": 340 },
-
-  { "id": "grocery-rice-sona", "name": "Sona Masoori Rice", "category": "Grocery", "unit": "kg", "price": 72 },
-  { "id": "grocery-rice-basmati", "name": "Basmati Rice", "category": "Grocery", "unit": "kg", "price": 118 },
-  { "id": "grocery-rice-brown", "name": "Brown Rice", "category": "Grocery", "unit": "kg", "price": 105 },
-  { "id": "grocery-wheat-flour", "name": "Wheat Flour (Atta)", "category": "Grocery", "unit": "kg", "price": 52 },
-  { "id": "grocery-maida", "name": "Refined Flour (Maida)", "category": "Grocery", "unit": "kg", "price": 46 },
-  { "id": "grocery-sooji", "name": "Sooji (Rava)", "category": "Grocery", "unit": "kg", "price": 50 },
-  { "id": "grocery-poha", "name": "Poha", "category": "Grocery", "unit": "kg", "price": 58 },
-  { "id": "grocery-vermicelli", "name": "Vermicelli", "category": "Grocery", "unit": "pack", "price": 38 },
-  { "id": "grocery-oats", "name": "Oats", "category": "Grocery", "unit": "kg", "price": 148 },
-  { "id": "grocery-corn-flour", "name": "Corn Flour", "category": "Grocery", "unit": "pack", "price": 42 },
-  { "id": "grocery-besan", "name": "Besan", "category": "Grocery", "unit": "kg", "price": 86 },
-  { "id": "grocery-ragi-flour", "name": "Ragi Flour", "category": "Grocery", "unit": "kg", "price": 70 },
-  { "id": "grocery-jowar-flour", "name": "Jowar Flour", "category": "Grocery", "unit": "kg", "price": 72 },
-  { "id": "grocery-bajra-flour", "name": "Bajra Flour", "category": "Grocery", "unit": "kg", "price": 68 },
-  { "id": "grocery-toor-dal", "name": "Toor Dal", "category": "Grocery", "unit": "kg", "price": 138 },
-  { "id": "grocery-moong-dal", "name": "Moong Dal", "category": "Grocery", "unit": "kg", "price": 128 },
-  { "id": "grocery-masoor-dal", "name": "Masoor Dal", "category": "Grocery", "unit": "kg", "price": 118 },
-  { "id": "grocery-chana-dal", "name": "Chana Dal", "category": "Grocery", "unit": "kg", "price": 98 },
-  { "id": "grocery-urad-dal", "name": "Urad Dal", "category": "Grocery", "unit": "kg", "price": 145 },
-  { "id": "grocery-kabuli-chana", "name": "Kabuli Chana", "category": "Grocery", "unit": "kg", "price": 122 },
-  { "id": "grocery-kala-chana", "name": "Kala Chana", "category": "Grocery", "unit": "kg", "price": 102 },
-  { "id": "grocery-rajma", "name": "Rajma", "category": "Grocery", "unit": "kg", "price": 132 },
-  { "id": "grocery-lobia", "name": "Lobia", "category": "Grocery", "unit": "kg", "price": 108 },
-  { "id": "grocery-green-moong", "name": "Whole Green Moong", "category": "Grocery", "unit": "kg", "price": 112 },
-  { "id": "grocery-peanuts", "name": "Peanuts", "category": "Grocery", "unit": "kg", "price": 120 },
-  { "id": "grocery-sugar", "name": "Sugar", "category": "Grocery", "unit": "kg", "price": 46 },
-  { "id": "grocery-jaggery", "name": "Jaggery", "category": "Grocery", "unit": "kg", "price": 68 },
-  { "id": "grocery-rock-salt", "name": "Rock Salt", "category": "Grocery", "unit": "kg", "price": 54 },
-  { "id": "grocery-iodized-salt", "name": "Iodized Salt", "category": "Grocery", "unit": "kg", "price": 24 },
-  { "id": "grocery-turmeric", "name": "Turmeric Powder", "category": "Grocery", "unit": "pack", "price": 38 },
-  { "id": "grocery-red-chilli", "name": "Red Chilli Powder", "category": "Grocery", "unit": "pack", "price": 42 },
-  { "id": "grocery-coriander-powder", "name": "Coriander Powder", "category": "Grocery", "unit": "pack", "price": 40 },
-  { "id": "grocery-garam-masala", "name": "Garam Masala", "category": "Grocery", "unit": "pack", "price": 58 },
-  { "id": "grocery-cumin", "name": "Cumin Seeds", "category": "Grocery", "unit": "pack", "price": 72 },
-  { "id": "grocery-mustard", "name": "Mustard Seeds", "category": "Grocery", "unit": "pack", "price": 46 },
-  { "id": "grocery-fenugreek-seeds", "name": "Fenugreek Seeds", "category": "Grocery", "unit": "pack", "price": 34 },
-  { "id": "grocery-black-pepper", "name": "Black Pepper", "category": "Grocery", "unit": "pack", "price": 98 },
-  { "id": "grocery-cardamom", "name": "Cardamom", "category": "Grocery", "unit": "pack", "price": 125 },
-  { "id": "grocery-cloves", "name": "Cloves", "category": "Grocery", "unit": "pack", "price": 88 },
-  { "id": "grocery-cinnamon", "name": "Cinnamon", "category": "Grocery", "unit": "pack", "price": 82 },
-  { "id": "grocery-cooking-oil", "name": "Sunflower Oil", "category": "Grocery", "unit": "liter", "price": 152 },
-  { "id": "grocery-mustard-oil", "name": "Mustard Oil", "category": "Grocery", "unit": "liter", "price": 172 },
-  { "id": "grocery-groundnut-oil", "name": "Groundnut Oil", "category": "Grocery", "unit": "liter", "price": 186 },
-  { "id": "grocery-tea", "name": "Tea", "category": "Grocery", "unit": "pack", "price": 180 },
-  { "id": "grocery-coffee", "name": "Coffee", "category": "Grocery", "unit": "pack", "price": 220 },
-
-  { "id": "household-detergent-powder", "name": "Detergent Powder", "category": "Household", "unit": "kg", "price": 110 },
-  { "id": "household-liquid-detergent", "name": "Liquid Detergent", "category": "Household", "unit": "liter", "price": 185 },
-  { "id": "household-fabric-conditioner", "name": "Fabric Conditioner", "category": "Household", "unit": "liter", "price": 210 },
-  { "id": "household-dishwash-liquid", "name": "Dishwash Liquid", "category": "Household", "unit": "liter", "price": 130 },
-  { "id": "household-dishwash-bar", "name": "Dishwash Bar", "category": "Household", "unit": "piece", "price": 20 },
-  { "id": "household-scrubber", "name": "Scrubber", "category": "Household", "unit": "pack", "price": 34 },
-  { "id": "household-floor-cleaner", "name": "Floor Cleaner", "category": "Household", "unit": "liter", "price": 168 },
-  { "id": "household-toilet-cleaner", "name": "Toilet Cleaner", "category": "Household", "unit": "liter", "price": 142 },
-  { "id": "household-glass-cleaner", "name": "Glass Cleaner", "category": "Household", "unit": "bottle", "price": 138 },
-  { "id": "household-disinfectant", "name": "Disinfectant Liquid", "category": "Household", "unit": "liter", "price": 205 },
-  { "id": "household-phenyl", "name": "Phenyl", "category": "Household", "unit": "liter", "price": 95 },
-  { "id": "household-bleach", "name": "Bleach", "category": "Household", "unit": "bottle", "price": 72 },
-  { "id": "household-room-freshener", "name": "Room Freshener", "category": "Household", "unit": "can", "price": 188 },
-  { "id": "household-agarbatti", "name": "Agarbatti", "category": "Household", "unit": "pack", "price": 42 },
-  { "id": "household-mosquito-repellent", "name": "Mosquito Repellent", "category": "Household", "unit": "pack", "price": 98 },
-  { "id": "household-tissue-roll", "name": "Tissue Roll", "category": "Household", "unit": "piece", "price": 36 },
-  { "id": "household-toilet-paper", "name": "Toilet Paper", "category": "Household", "unit": "pack", "price": 110 },
-  { "id": "household-paper-napkin", "name": "Paper Napkin", "category": "Household", "unit": "pack", "price": 48 },
-  { "id": "household-aluminium-foil", "name": "Aluminium Foil", "category": "Household", "unit": "roll", "price": 95 },
-  { "id": "household-cling-film", "name": "Cling Film", "category": "Household", "unit": "roll", "price": 88 },
-  { "id": "household-garbage-bags", "name": "Garbage Bags", "category": "Household", "unit": "roll", "price": 72 },
-  { "id": "household-matchbox", "name": "Matchbox", "category": "Household", "unit": "pack", "price": 16 },
-  { "id": "household-candles", "name": "Candles", "category": "Household", "unit": "pack", "price": 38 },
-  { "id": "household-batteries-aa", "name": "AA Batteries", "category": "Household", "unit": "pack", "price": 98 },
-  { "id": "household-batteries-aaa", "name": "AAA Batteries", "category": "Household", "unit": "pack", "price": 98 }
+[
+    {
+        "id": "veg-potato",
+        "name": "Potato",
+        "category": "Vegetables",
+        "unit": "Kg",
+        "price": 20
+    },
+    {
+        "id": "veg-onion",
+        "name": "Onion",
+        "category": "Vegetables",
+        "unit": "Kg",
+        "price": 20
+    },
+    {
+        "id": "veg-tomato",
+        "name": "Tomato",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 34
+    },
+    {
+        "id": "veg-lady-finger",
+        "name": "Lady Finger (Bhindi)",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 56
+    },
+    {
+        "id": "veg-brinjal",
+        "name": "Brinjal",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 44
+    },
+    {
+        "id": "veg-cauliflower",
+        "name": "Cauliflower",
+        "category": "Vegetables",
+        "unit": "piece",
+        "price": 42
+    },
+    {
+        "id": "veg-cabbage",
+        "name": "Cabbage",
+        "category": "Vegetables",
+        "unit": "piece",
+        "price": 36
+    },
+    {
+        "id": "veg-capsicum",
+        "name": "Capsicum",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 72
+    },
+    {
+        "id": "veg-carrot",
+        "name": "Carrot",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 52
+    },
+    {
+        "id": "veg-beetroot",
+        "name": "Beetroot",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 48
+    },
+    {
+        "id": "veg-bottle-gourd",
+        "name": "Bottle Gourd (Lauki)",
+        "category": "Vegetables",
+        "unit": "piece",
+        "price": 38
+    },
+    {
+        "id": "veg-bitter-gourd",
+        "name": "Bitter Gourd (Karela)",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 68
+    },
+    {
+        "id": "veg-pumpkin",
+        "name": "Pumpkin",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 34
+    },
+    {
+        "id": "veg-raw-banana",
+        "name": "Raw Banana",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 46
+    },
+    {
+        "id": "veg-cucumber",
+        "name": "Cucumber",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 36
+    },
+    {
+        "id": "veg-radish",
+        "name": "Radish",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 32
+    },
+    {
+        "id": "veg-drumstick",
+        "name": "Drumstick",
+        "category": "Vegetables",
+        "unit": "Bundle",
+        "price": 20
+    },
+    {
+        "id": "veg-green-peas",
+        "name": "Green Peas",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 96
+    },
+    {
+        "id": "veg-french-beans",
+        "name": "French Beans",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 86
+    },
+    {
+        "id": "veg-cluster-beans",
+        "name": "Cluster Beans",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 74
+    },
+    {
+        "id": "veg-pointed-gourd",
+        "name": "Pointed Gourd (Parwal\/Potala)",
+        "category": "Vegetables",
+        "unit": "Kg",
+        "price": 100
+    },
+    {
+        "id": "veg-ginger",
+        "name": "Ginger",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 118
+    },
+    {
+        "id": "veg-garlic",
+        "name": "Garlic",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 168
+    },
+    {
+        "id": "veg-green-chilli",
+        "name": "Green Chilli",
+        "category": "Vegetables",
+        "unit": "kg",
+        "price": 92
+    },
+    {
+        "id": "veg-coriander",
+        "name": "Coriander Leaves (Dhaniya Patta)",
+        "category": "Vegetables",
+        "unit": "Bunch",
+        "price": 20
+    },
+    {
+        "id": "veg-mint",
+        "name": "Mint Leaves (Pudina)",
+        "category": "Vegetables",
+        "unit": "Bunch",
+        "price": 20
+    },
+    {
+        "id": "veg-spinach",
+        "name": "Spinach (Palak)",
+        "category": "Vegetables",
+        "unit": "bunch",
+        "price": 20
+    },
+    {
+        "id": "veg-fenugreek",
+        "name": "Fenugreek Leaves (Methi)",
+        "category": "Vegetables",
+        "unit": "bunch",
+        "price": 22
+    },
+    {
+        "id": "veg-curry-leaves",
+        "name": "Curry Leaves",
+        "category": "Vegetables",
+        "unit": "pack",
+        "price": 12
+    },
+    {
+        "id": "veg-lemon",
+        "name": "Lemon",
+        "category": "Vegetables",
+        "unit": "Piece",
+        "price": 5
+    },
+    {
+        "id": "fruit-banana",
+        "name": "Banana",
+        "category": "Fruits",
+        "unit": "dozen",
+        "price": 62
+    },
+    {
+        "id": "fruit-apple",
+        "name": "Apple",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 170
+    },
+    {
+        "id": "fruit-orange",
+        "name": "Orange",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 110
+    },
+    {
+        "id": "fruit-mosambi",
+        "name": "Mosambi",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 88
+    },
+    {
+        "id": "fruit-pomegranate",
+        "name": "Pomegranate",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 180
+    },
+    {
+        "id": "fruit-grapes-green",
+        "name": "Green Grapes",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 120
+    },
+    {
+        "id": "fruit-grapes-black",
+        "name": "Black Grapes",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 130
+    },
+    {
+        "id": "fruit-papaya",
+        "name": "Papaya",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 58
+    },
+    {
+        "id": "fruit-guava",
+        "name": "Guava",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 84
+    },
+    {
+        "id": "fruit-pineapple",
+        "name": "Pineapple",
+        "category": "Fruits",
+        "unit": "piece",
+        "price": 78
+    },
+    {
+        "id": "fruit-watermelon",
+        "name": "Watermelon",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 32
+    },
+    {
+        "id": "fruit-muskmelon",
+        "name": "Muskmelon",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 46
+    },
+    {
+        "id": "fruit-mango",
+        "name": "Mango",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 140
+    },
+    {
+        "id": "fruit-pear",
+        "name": "Pear",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 170
+    },
+    {
+        "id": "fruit-plum",
+        "name": "Plum",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 190
+    },
+    {
+        "id": "fruit-kiwi",
+        "name": "Kiwi",
+        "category": "Fruits",
+        "unit": "pack",
+        "price": 135
+    },
+    {
+        "id": "fruit-chikoo",
+        "name": "Chikoo (Sapota)",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 92
+    },
+    {
+        "id": "fruit-jamun",
+        "name": "Jamun",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 150
+    },
+    {
+        "id": "fruit-litchi",
+        "name": "Litchi",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 180
+    },
+    {
+        "id": "fruit-custard-apple",
+        "name": "Custard Apple",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 130
+    },
+    {
+        "id": "fruit-coconut",
+        "name": "Coconut",
+        "category": "Fruits",
+        "unit": "piece",
+        "price": 42
+    },
+    {
+        "id": "fruit-dates-fresh",
+        "name": "Fresh Dates",
+        "category": "Fruits",
+        "unit": "kg",
+        "price": 210
+    },
+    {
+        "id": "fruit-strawberry",
+        "name": "Strawberry",
+        "category": "Fruits",
+        "unit": "pack",
+        "price": 160
+    },
+    {
+        "id": "fruit-dragon-fruit",
+        "name": "Dragon Fruit",
+        "category": "Fruits",
+        "unit": "piece",
+        "price": 85
+    },
+    {
+        "id": "dairy-milk",
+        "name": "Milk",
+        "category": "Dairy",
+        "unit": "liter",
+        "price": 62
+    },
+    {
+        "id": "dairy-curd",
+        "name": "Curd",
+        "category": "Dairy",
+        "unit": "kg",
+        "price": 88
+    },
+    {
+        "id": "dairy-buttermilk",
+        "name": "Buttermilk",
+        "category": "Dairy",
+        "unit": "liter",
+        "price": 48
+    },
+    {
+        "id": "dairy-lassi",
+        "name": "Lassi",
+        "category": "Dairy",
+        "unit": "liter",
+        "price": 70
+    },
+    {
+        "id": "dairy-paneer",
+        "name": "Paneer",
+        "category": "Dairy",
+        "unit": "kg",
+        "price": 360
+    },
+    {
+        "id": "dairy-butter",
+        "name": "Butter",
+        "category": "Dairy",
+        "unit": "pack",
+        "price": 64
+    },
+    {
+        "id": "dairy-ghee",
+        "name": "Ghee",
+        "category": "Dairy",
+        "unit": "liter",
+        "price": 620
+    },
+    {
+        "id": "dairy-cheese-slices",
+        "name": "Cheese Slices",
+        "category": "Dairy",
+        "unit": "pack",
+        "price": 140
+    },
+    {
+        "id": "dairy-cheddar",
+        "name": "Cheddar Cheese",
+        "category": "Dairy",
+        "unit": "pack",
+        "price": 220
+    },
+    {
+        "id": "dairy-cream",
+        "name": "Fresh Cream",
+        "category": "Dairy",
+        "unit": "pack",
+        "price": 72
+    },
+    {
+        "id": "dairy-condensed-milk",
+        "name": "Condensed Milk",
+        "category": "Dairy",
+        "unit": "can",
+        "price": 138
+    },
+    {
+        "id": "dairy-khoya",
+        "name": "Khoya",
+        "category": "Dairy",
+        "unit": "kg",
+        "price": 420
+    },
+    {
+        "id": "dairy-yogurt-greek",
+        "name": "Greek Yogurt",
+        "category": "Dairy",
+        "unit": "cup",
+        "price": 52
+    },
+    {
+        "id": "dairy-flavored-milk",
+        "name": "Flavored Milk",
+        "category": "Dairy",
+        "unit": "bottle",
+        "price": 35
+    },
+    {
+        "id": "dairy-ice-cream",
+        "name": "Ice Cream",
+        "category": "Dairy",
+        "unit": "tub",
+        "price": 180
+    },
+    {
+        "id": "dairy-tofu",
+        "name": "Tofu",
+        "category": "Dairy",
+        "unit": "pack",
+        "price": 95
+    },
+    {
+        "id": "dairy-milk-powder",
+        "name": "Milk Powder",
+        "category": "Dairy",
+        "unit": "pack",
+        "price": 340
+    },
+    {
+        "id": "grocery-rice-sona",
+        "name": "Sona Masoori Rice",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 72
+    },
+    {
+        "id": "grocery-rice-basmati",
+        "name": "Basmati Rice",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 118
+    },
+    {
+        "id": "grocery-rice-brown",
+        "name": "Brown Rice",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 105
+    },
+    {
+        "id": "grocery-wheat-flour",
+        "name": "Wheat Flour (Atta)",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 52
+    },
+    {
+        "id": "grocery-maida",
+        "name": "Refined Flour (Maida)",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 46
+    },
+    {
+        "id": "grocery-sooji",
+        "name": "Sooji (Rava)",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 50
+    },
+    {
+        "id": "grocery-poha",
+        "name": "Poha",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 58
+    },
+    {
+        "id": "grocery-vermicelli",
+        "name": "Vermicelli",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 38
+    },
+    {
+        "id": "grocery-oats",
+        "name": "Oats",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 148
+    },
+    {
+        "id": "grocery-corn-flour",
+        "name": "Corn Flour",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 42
+    },
+    {
+        "id": "grocery-besan",
+        "name": "Besan",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 86
+    },
+    {
+        "id": "grocery-ragi-flour",
+        "name": "Ragi Flour",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 70
+    },
+    {
+        "id": "grocery-jowar-flour",
+        "name": "Jowar Flour",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 72
+    },
+    {
+        "id": "grocery-bajra-flour",
+        "name": "Bajra Flour",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 68
+    },
+    {
+        "id": "grocery-toor-dal",
+        "name": "Toor Dal",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 138
+    },
+    {
+        "id": "grocery-moong-dal",
+        "name": "Moong Dal",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 128
+    },
+    {
+        "id": "grocery-masoor-dal",
+        "name": "Masoor Dal",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 118
+    },
+    {
+        "id": "grocery-chana-dal",
+        "name": "Chana Dal",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 98
+    },
+    {
+        "id": "grocery-urad-dal",
+        "name": "Urad Dal",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 145
+    },
+    {
+        "id": "grocery-kabuli-chana",
+        "name": "Kabuli Chana",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 122
+    },
+    {
+        "id": "grocery-kala-chana",
+        "name": "Kala Chana",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 102
+    },
+    {
+        "id": "grocery-rajma",
+        "name": "Rajma",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 132
+    },
+    {
+        "id": "grocery-lobia",
+        "name": "Lobia",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 108
+    },
+    {
+        "id": "grocery-green-moong",
+        "name": "Whole Green Moong",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 112
+    },
+    {
+        "id": "grocery-peanuts",
+        "name": "Peanuts",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 120
+    },
+    {
+        "id": "grocery-sugar",
+        "name": "Sugar",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 46
+    },
+    {
+        "id": "grocery-jaggery",
+        "name": "Jaggery",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 68
+    },
+    {
+        "id": "grocery-rock-salt",
+        "name": "Rock Salt",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 54
+    },
+    {
+        "id": "grocery-iodized-salt",
+        "name": "Iodized Salt",
+        "category": "Grocery",
+        "unit": "kg",
+        "price": 24
+    },
+    {
+        "id": "grocery-turmeric",
+        "name": "Turmeric Powder",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 38
+    },
+    {
+        "id": "grocery-red-chilli",
+        "name": "Red Chilli Powder",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 42
+    },
+    {
+        "id": "grocery-coriander-powder",
+        "name": "Coriander Powder",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 40
+    },
+    {
+        "id": "grocery-garam-masala",
+        "name": "Garam Masala",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 58
+    },
+    {
+        "id": "grocery-cumin",
+        "name": "Cumin Seeds",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 72
+    },
+    {
+        "id": "grocery-mustard",
+        "name": "Mustard Seeds",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 46
+    },
+    {
+        "id": "grocery-fenugreek-seeds",
+        "name": "Fenugreek Seeds",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 34
+    },
+    {
+        "id": "grocery-black-pepper",
+        "name": "Black Pepper",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 98
+    },
+    {
+        "id": "grocery-cardamom",
+        "name": "Cardamom",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 125
+    },
+    {
+        "id": "grocery-cloves",
+        "name": "Cloves",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 88
+    },
+    {
+        "id": "grocery-cinnamon",
+        "name": "Cinnamon",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 82
+    },
+    {
+        "id": "grocery-cooking-oil",
+        "name": "Sunflower Oil",
+        "category": "Grocery",
+        "unit": "liter",
+        "price": 152
+    },
+    {
+        "id": "grocery-mustard-oil",
+        "name": "Mustard Oil",
+        "category": "Grocery",
+        "unit": "liter",
+        "price": 172
+    },
+    {
+        "id": "grocery-groundnut-oil",
+        "name": "Groundnut Oil",
+        "category": "Grocery",
+        "unit": "liter",
+        "price": 186
+    },
+    {
+        "id": "grocery-tea",
+        "name": "Tea",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 180
+    },
+    {
+        "id": "grocery-coffee",
+        "name": "Coffee",
+        "category": "Grocery",
+        "unit": "pack",
+        "price": 220
+    },
+    {
+        "id": "household-detergent-powder",
+        "name": "Detergent Powder",
+        "category": "Household",
+        "unit": "kg",
+        "price": 110
+    },
+    {
+        "id": "household-liquid-detergent",
+        "name": "Liquid Detergent",
+        "category": "Household",
+        "unit": "liter",
+        "price": 185
+    },
+    {
+        "id": "household-fabric-conditioner",
+        "name": "Fabric Conditioner",
+        "category": "Household",
+        "unit": "liter",
+        "price": 210
+    },
+    {
+        "id": "household-dishwash-liquid",
+        "name": "Dishwash Liquid",
+        "category": "Household",
+        "unit": "liter",
+        "price": 130
+    },
+    {
+        "id": "household-dishwash-bar",
+        "name": "Dishwash Bar",
+        "category": "Household",
+        "unit": "piece",
+        "price": 20
+    },
+    {
+        "id": "household-scrubber",
+        "name": "Scrubber",
+        "category": "Household",
+        "unit": "pack",
+        "price": 34
+    },
+    {
+        "id": "household-floor-cleaner",
+        "name": "Floor Cleaner",
+        "category": "Household",
+        "unit": "liter",
+        "price": 168
+    },
+    {
+        "id": "household-toilet-cleaner",
+        "name": "Toilet Cleaner",
+        "category": "Household",
+        "unit": "liter",
+        "price": 142
+    },
+    {
+        "id": "household-glass-cleaner",
+        "name": "Glass Cleaner",
+        "category": "Household",
+        "unit": "bottle",
+        "price": 138
+    },
+    {
+        "id": "household-disinfectant",
+        "name": "Disinfectant Liquid",
+        "category": "Household",
+        "unit": "liter",
+        "price": 205
+    },
+    {
+        "id": "household-phenyl",
+        "name": "Phenyl",
+        "category": "Household",
+        "unit": "liter",
+        "price": 95
+    },
+    {
+        "id": "household-bleach",
+        "name": "Bleach",
+        "category": "Household",
+        "unit": "bottle",
+        "price": 72
+    },
+    {
+        "id": "household-room-freshener",
+        "name": "Room Freshener",
+        "category": "Household",
+        "unit": "can",
+        "price": 188
+    },
+    {
+        "id": "household-agarbatti",
+        "name": "Agarbatti",
+        "category": "Household",
+        "unit": "pack",
+        "price": 42
+    },
+    {
+        "id": "household-mosquito-repellent",
+        "name": "Mosquito Repellent",
+        "category": "Household",
+        "unit": "pack",
+        "price": 98
+    },
+    {
+        "id": "household-tissue-roll",
+        "name": "Tissue Roll",
+        "category": "Household",
+        "unit": "piece",
+        "price": 36
+    },
+    {
+        "id": "household-toilet-paper",
+        "name": "Toilet Paper",
+        "category": "Household",
+        "unit": "pack",
+        "price": 110
+    },
+    {
+        "id": "household-paper-napkin",
+        "name": "Paper Napkin",
+        "category": "Household",
+        "unit": "pack",
+        "price": 48
+    },
+    {
+        "id": "household-aluminium-foil",
+        "name": "Aluminium Foil",
+        "category": "Household",
+        "unit": "roll",
+        "price": 95
+    },
+    {
+        "id": "household-cling-film",
+        "name": "Cling Film",
+        "category": "Household",
+        "unit": "roll",
+        "price": 88
+    },
+    {
+        "id": "household-garbage-bags",
+        "name": "Garbage Bags",
+        "category": "Household",
+        "unit": "roll",
+        "price": 72
+    },
+    {
+        "id": "household-matchbox",
+        "name": "Matchbox",
+        "category": "Household",
+        "unit": "pack",
+        "price": 16
+    },
+    {
+        "id": "household-candles",
+        "name": "Candles",
+        "category": "Household",
+        "unit": "pack",
+        "price": 38
+    },
+    {
+        "id": "household-batteries-aa",
+        "name": "AA Batteries",
+        "category": "Household",
+        "unit": "pack",
+        "price": 98
+    },
+    {
+        "id": "household-batteries-aaa",
+        "name": "AAA Batteries",
+        "category": "Household",
+        "unit": "pack",
+        "price": 98
+    }
 ]
