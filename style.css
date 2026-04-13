@@ -131,6 +131,15 @@ h1 {
   padding: 1rem;
 }
 
+.cart-panel {
+  order: -1;
+  position: sticky;
+  top: 0.6rem;
+  z-index: 8;
+  max-height: 50vh;
+  overflow: auto;
+}
+
 .controls {
   display: grid;
   grid-template-columns: 1fr;
@@ -379,6 +388,11 @@ body.dark .qty-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface);
+  padding-bottom: 0.45rem;
 }
 
 h2 {
@@ -433,6 +447,11 @@ h2 {
   margin-top: 1rem;
   display: grid;
   gap: 0.55rem;
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  background: var(--surface);
+  padding-top: 0.55rem;
 }
 
 .primary-btn,
@@ -494,7 +513,18 @@ h2 {
   }
 
   .cart-panel {
+    order: 0;
     position: sticky;
     top: 1rem;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .cart-header,
+  .cart-actions {
+    position: static;
+    background: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
